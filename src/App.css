@@ -50,7 +50,9 @@ h1 {
     display: flex;
     flex-direction: column;
   }
-
+  .to-do-btn{
+    font-size: 0.75rem;
+  }
   p {
     font-size: 0.65rem;
     padding-top: 0.25rem;
