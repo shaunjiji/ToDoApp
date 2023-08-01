@@ -41,7 +41,7 @@ const ToDo: React.FC<ToDoPropsInterface> = ({ todo, toggleComplete, deleteTodo, 
       >
         {todo.task}
       </p>
-      <div>
+      <div className="todo-icons">
         <FontAwesomeIcon icon={faPenToSquare} onClick={handleEdit} />
         <FontAwesomeIcon icon={faTrash} onClick={handleDelete} />
       </div>

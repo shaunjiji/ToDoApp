@@ -14,7 +14,7 @@ const ToDoContainer = () => {
   // State to manage the list of todos
   const [todos, setTodos] = useState<ToDoInterface[]>([]);
 
-  // State to manage the alert message
+  // State to manage the alert component
   const [alert, setAlert] = useState<{ message: string; show: boolean }>({
     message: "",
     show: false,
@@ -64,7 +64,6 @@ const ToDoContainer = () => {
   // Function to show Dialog component to confirm task deletion
   const deleteTodo = (id: string) => {
     setDialog({ showDialog: true, deleteTaskId: id });
-    
   };
   
   // Function to delete task
