@@ -30,9 +30,9 @@ const ToDo: React.FC<ToDoPropsInterface> = ({ todo, toggleComplete, deleteTodo, 
     <div className="to-do">
       <div>
         {todo.completed ? (
-          <FontAwesomeIcon icon={faSquareCheck} onClick={handleChecked} />
+          <FontAwesomeIcon icon={faSquareCheck} aria-label="Complete" onClick={handleChecked} />
         ) : (
-          <FontAwesomeIcon icon={faSquare} onClick={handleChecked} />
+          <FontAwesomeIcon icon={faSquare} aria-label="Incomplete" onClick={handleChecked} />
         )}
       </div>
       <p
@@ -42,8 +42,8 @@ const ToDo: React.FC<ToDoPropsInterface> = ({ todo, toggleComplete, deleteTodo, 
         {todo.task}
       </p>
       <div className="todo-icons">
-        <FontAwesomeIcon icon={faPenToSquare} onClick={handleEdit} />
-        <FontAwesomeIcon icon={faTrash} onClick={handleDelete} />
+        <FontAwesomeIcon icon={faPenToSquare} aria-label="Edit" onClick={handleEdit} />
+        <FontAwesomeIcon icon={faTrash} aria-label="Delete" onClick={handleDelete} />
       </div>
     </div>
   );
