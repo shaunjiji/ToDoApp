@@ -27,7 +27,7 @@ To run the tests run `npm run test` from the project root.
 4. @mui/material: Used the Material-UI library to implement pre-built React components.
 5. @fortawesome: Font awesome libraries for adding customizable icons.
 
-## If it was a bigger project
+## Future Enhancements
 
 This was a coding challenge and scope is quite small. If it was a bigger real project, I would add the following features:
 
