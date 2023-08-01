@@ -29,7 +29,7 @@ const ToDoForm: React.FC<ToDoFormInterface> = ({ addTodo, handleAddTodoCharAlert
       <button type="submit" className="to-do-btn">
         Add Task
       </button>
-    </form>
+    </form>  
   );
 };
 

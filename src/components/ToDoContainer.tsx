@@ -20,7 +20,7 @@ const ToDoContainer = () => {
     show: false,
   });
   
-  // State to manage the dialog
+  // State to manage the dialog component
   const [dialog, setDialog] = useState<{ showDialog: boolean; deleteTaskId: string }>({
     showDialog: false,
     deleteTaskId: "",
@@ -72,7 +72,7 @@ const ToDoContainer = () => {
     setDialog({ showDialog: false, deleteTaskId: "" });
 
   }
-  // Function to toggle edit mode
+  // Function to toggle edit mode 
   const editTodo = (id: string) => {
     setTodos((prevTodos) =>
       prevTodos.map((todo) =>
